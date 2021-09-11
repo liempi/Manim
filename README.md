@@ -7,4 +7,4 @@ I'm currently using **MacOs** but before I used **Windows** and **Linux** and I 
 # Installation
 ## MacOS
 ### Pre-requirements
-I recommend to install the  **Homebrew** package because this is a easy way to install the dependeces used in Manim.
+I recommend to install the  **Homebrew** package because this is a easy way to install the dependecies used in Manim.
