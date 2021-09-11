@@ -24,7 +24,7 @@ You will see the **arch** of your system like this:
 <pre><code> x86_64
 </code></pre>
 
-If you wanna see information about your **processor**:
+To see information about your **processor**:
 
 <pre><code> sysctl -a | grep machdep.cpu.brand_string
 </code></pre>
@@ -43,4 +43,4 @@ When it's already downloaded, double-click python.mpkg and follow the instructio
 I recommend to install the  **Homebrew** package because this is a easy way to install the dependecies used in Manim. Just copy & paste the next line in your terminal and follow the instructions.
 
 <pre><code> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-</code?</pre>
+</code></pre>
