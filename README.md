@@ -1,5 +1,5 @@
 # Manim
-Hello! Here you would find some animations made in **Manim**.
+Hello! Here you would find some animations that I made in **Manim**.
 
 Hola! Aquí iré dejando algunas animaciones que he hecho en **Manim**.
 
