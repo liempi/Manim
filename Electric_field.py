@@ -1,6 +1,5 @@
 from manim import *
 import numpy as np
-#Now just work for charges in the origin, but soon it will be able to any point in the x-y plane.
 
 class electric_field(Scene):
     def construct(self):
@@ -15,9 +14,9 @@ class electric_field(Scene):
         #Charge definition, if carga<0 color: BLUE  elif carga>0 color:RED
         def charge(color,x_0):
             if color == RED:
-                dot = Dot(radius=0.2,color=PURE_RED).shift(np.array([x_0[0],x_0[1],x_0[2]]))
+                dot = Dot(radius=0.05,color=PURE_RED).shift(np.array([x_0[0],x_0[1],x_0[2]]))
             elif color == BLUE:
-                dot = Dot(radius=0.2,color=PURE_BLUE).shift(np.array([x_0[0],x_0[1],x_0[2]]))
+                dot = Dot(radius=0.1,color=PURE_BLUE).shift(np.array([x_0[0],x_0[1],x_0[2]]))
             return dot
             
         #Coordinates of charge
@@ -39,10 +38,10 @@ class electric_field(Scene):
         self.play(Create(grid),run_time=2)
         
         #Adding the charge
-        self.play(Create(charge(RED,0)))
+        self.play(Create(charge(RED,x_0)))
         
         #Adding the vector field
-        self.play(Create(vector_field))
+        self.play(Create(vector_field),run_time=6)
         
         #Waiting 2 seconds        
         self.wait(2)
