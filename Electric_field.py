@@ -29,8 +29,8 @@ class electric_field(Scene):
         
         
         #Vector field
-        vector_field = ArrowVectorField(function,color_scheme=None,min_color_scheme_value=0, max_color_scheme_value=5,color=PURE_BLUE,vector_config={"stroke_width":
-        6})
+        vector_field = ArrowVectorField(function,color_scheme=None,min_color_scheme_value=0,\
+                  max_color_scheme_value=5,color=PURE_BLUE,vector_config={"stroke_width":6})
         
         #Adding the grid
         self.play(Create(grid),run_time=2)
