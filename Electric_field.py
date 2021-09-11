@@ -1,6 +1,6 @@
 from manim import *
 import numpy as np
-
+#Now just work for charges in the origin, but soon it will be able to any point in the x-y plane.
 
 class electric_field(Scene):
     def construct(self):
