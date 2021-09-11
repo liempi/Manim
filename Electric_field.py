@@ -13,19 +13,22 @@ class electric_field(Scene):
         grid.add(grid.get_axis_labels())
         
         #Charge definition, if carga<0 color: BLUE  elif carga>0 color:RED
-        def charge(color,x_0,y_0):
+        def charge(color,x_0):
             if color == RED:
-                dot = Dot(radius=0.2,color=PURE_RED).shift(x_0*LEFT+y_0*UP)
+                dot = Dot(radius=0.2,color=PURE_RED).shift(np.array([x_0[0],x_0[1],x_0[2]]))
             elif color == BLUE:
-                dot = Dot(radius=0.2,color=PURE_BLUE).shift(x_0*LEFT+y_0*UP)
+                dot = Dot(radius=0.2,color=PURE_BLUE).shift(np.array([x_0[0],x_0[1],x_0[2]]))
             return dot
             
+        #Coordinates of charge
+        x_0 = np.array([1,0,0])
+
         #Avoid zero division error
         eps=0.000001
 
         #Function to calculate the vector field. The first value is the charge in Coulombs.
-        function = lambda x: -200 / (4*PI) * np.array([(x[0])/(x[0]**2+x[1]**2+eps)**(3/2),\
-                    (x[1])/(x[0]**2+x[1]**2+eps)**(3/2)])
+        function = lambda x: -200/(4*PI) *np.array([(x[0]-x_0[0])/((x[0]-x_0[0])**2+(x[1]-x_0[1])**2+eps)**(3/2),\
+            (x[1]-x_0[1])/((x[0]-x_0[0])**2+(x[1]-x_0[1])**2+eps)**(3/2)])
         
         
         #Vector field
@@ -36,7 +39,7 @@ class electric_field(Scene):
         self.play(Create(grid),run_time=2)
         
         #Adding the charge
-        self.play(Create(charge(RED,0,0)))
+        self.play(Create(charge(RED,0)))
         
         #Adding the vector field
         self.play(Create(vector_field))
