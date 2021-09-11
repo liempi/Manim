@@ -24,6 +24,8 @@ You will see the **arch** of your system like this:
 <pre><code> x86_64
 </code></pre>
 
+Now, you are able to install the correct version of **Python**
+
 * **Homebrew**
 
 I recommend to install the  **Homebrew** package because this is a easy way to install the dependecies used in Manim.
