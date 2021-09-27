@@ -51,3 +51,10 @@ Now, just install by *brew install*:
 <pre><code>brew install py3cairo ffmpeg
 brew install cmake pango scipy
 </code></pre>
+
+# Installing manim CE
+
+If you followed all the steps above, probably you are able to install *Manim CE*. Type the following script and enjoy!
+
+<pre><code>pip3 install manim
+</code></pre>
