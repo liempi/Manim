@@ -48,6 +48,7 @@ I recommend to install the  **Homebrew** package because this is a easy way to i
 ### Required Dependencies
 
 Now, just install by *brew install*:
-<pre><code> brew install py3cairo ffmpeg
+<pre><code>
+brew install py3cairo ffmpeg
 brew install cmake pango scipy
 </code></pre>
