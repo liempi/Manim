@@ -44,3 +44,10 @@ I recommend to install the  **Homebrew** package because this is a easy way to i
 
 <pre><code> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 </code></pre>
+
+### Required Dependencies
+
+Now, just install by *brew install*:
+<pre><code> brew install py3cairo ffmpeg
+brew install cmake pango scipy
+</code></pre>
