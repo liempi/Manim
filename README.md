@@ -3,7 +3,7 @@ Hello! Here you would find some animations that I made in **Manim**.
 
 Hola! Aquí iré dejando algunas animaciones que he hecho en **Manim**.
 
-I'm currently using **MacOs** but before I worked with **Windows** and **Linux**, so I would help you if you couldn't install them.
+I'm currently using **MacOs** but before I worked in **Windows** and **Linux**, so I would help you if you couldn't install in those system.
 
 # Installation
 ## MacOS
