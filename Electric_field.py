@@ -89,4 +89,3 @@ class electric_field_2D(Scene):
         
         #Waiting 2 seconds        
         self.wait(5)
-        
